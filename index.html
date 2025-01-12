@@ -2,89 +2,119 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Nav Bar-->
-    <nav>
-         <h1 class="heading">
-            Newton School of Technology
-         </h1>
-         <ul>
-            <li><a href="">Upcoming Events</a></li>
-            <li><a href="">Past Events</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="">Register</a></li>
-         </ul>
+    <nav class="navbar">
+        <div class="logo">Newton School of Technology</div>
+        <ul class="nav-links">
+            <li><a href="#">Upcoming Events</a></li>
+            <li><a href="#">Past Events</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><button class="register-btn">Register</button></li>
+        </ul>
     </nav>
-    <header>
+
+    <header class="hero">
         <h1>Welcome to NST Events</h1>
         <p>Discover the vibrant campus life at Newton School of Technology through our exciting events and activities.</p>
-    </header>
-    <main>
-
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                  <div class="col" id="company">
-                      <h3>Newton School of Technology</h4>
-                      <p>
-                        Empowering students with quality education since 2010.
-                      </p>
-                      <div class="social">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                      </div>
-                  </div>
-
-                  <div class="col" id="useful-links">
-                     <h3 style="padding-top: 50px;">Quick Links</h3>
-                     <div class="links">
-                        <a href="#">Upcoming events</a>
-                        <a href="#">Past events</a>
-                        <a href="#">Gallery</a>
-                        <a href="#">Acheivements</a>
-                        <a href="#">Register</a>
-                     </div>
-                  </div>
-
-                  <div class="col" id="contact" style="margin-top: 0;">
-                      <h3>Contact Us</h3>
-                      <div class="contact-details">
-                         <i class="fa fa-location"></i>
-                         <p>Tech street <br>Code city</p>
-                      </div>
-                      <br>
-                      <div class="contact-details" style="padding-top: 10px;">
-                         <i class="fa fa-phone"></i>
-                         <p>+91-1234567890</p>
-                      </div>
-                  </div>
-            </div>
-
-            <div class="row">
-                  <div class="form">
-                    <form action="">
-                        <p style="font-family: sans-serif;color: white;justify-self: center;padding: 10px;">Subscribe to our newsletter!</p>
-                        <input type="text" placeholder="Email here...">
-                        <button><i class="fa fa-paper-plane"></i></button>
-                    </form>
-                  </div>
-            </div>
-
+        <div class="buttons">
+            <button class="btn primary">Upcoming Events</button>
+            <button class="btn secondary">View Calendar</button>
         </div>
-        <hr>
-        <p style="font-family: sans-serif;color: white;justify-self: center;padding: 10px;">&copy 2024 Newton School of Technology. All rights reserved.</p>
-     </footer>    
+    </header>
 
+
+    <section id="upcoming-events">
+        <div class="section-header">
+            <h1>Upcoming Events</h1>
+            <p>Stay tuned for our exciting upcoming events at Newton School of Technology</p>
+        </div>
+    
+        <div class="events-container">
+            <div class="event-card">
+                <h3 class="event-date">Jan 15, 2025</h3>
+                <h2 class="event-title">Annual Tech Summit</h2>
+                <p>Join us for a day of innovation, technology, and meeting great personalities</p>
+                <p><strong>Location:</strong> NST, 4th Floor</p>
+                <button class="register-button">Register Now</button>
+            </div>
+    
+            <div class="event-card">
+                <h3 class="event-date">Feb 15, 2025</h3>
+                <h2 class="event-title">Sports Meet</h2>
+                <p>Join us for fun</p>
+                <p><strong>Location:</strong> Sports Ground</p>
+                <button class="register-button">Register Now</button>
+            </div>
+    
+            <div class="event-card">
+                <h3 class="event-date">Mar 15, 2025</h3>
+                <h2 class="event-title">Hackathon 2025</h2>
+                <p>24-hour coding challenge to solve real-world problems. Amazing prizes to be won!</p>
+                <p><strong>Location:</strong> Online Newton Portal</p>
+                <button class="register-button">Register Now</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="past-events">
+        <h1>Past Events</h1>
+        <p>Relive our most successful events from the past</p>
+
+        <div class="event-card">
+            <span class="tag">Hackathon</span>
+            <h3>November 2, 2024</h3>
+            <h2>Nirmaan</h2>
+            <p>5-hour Coding Hackathon where students build innovative websites</p>
+            <p><strong>Participation:</strong> 60+ Teams, 250+ Students</p>
+            <p><strong>Winners:</strong></p>
+            <ul>
+                <li>Team Crafters - Making eCommerce Website</li>
+                <li>CodeMonkeys - Making Portfolio Website</li>
+            </ul>
+        </div>
+
+        <div class="event-card">
+            <span class="tag">Workshop</span>
+            <h3>November 27, 2024</h3>
+            <h2>Robotics Workshop</h2>
+            <p><strong>Highlights:</strong> Robotics 1st Workshop, Competition</p>
+        </div>
+    </section>
+
+    <section id="event-details">
+        <h1>Event Details</h1>
+        <p>Capturing moments from our memorable events</p>
+
+        <div class="event-details-card">
+            <span class="tag">Featured Event</span>
+            <h2>Code Sprint 2024</h2>
+            <p><strong>Date:</strong> March 15-16, 2024 (9:00 AM - 9:00 PM)</p>
+            <p><strong>Location:</strong> Newton School Campus, Tech Hub</p>
+            <p>Join us for an exciting 48-hour coding challenge where participants will work on innovative solutions for real-world problems. Showcase your skills, learn from peers, and win exciting prizes.</p>
+
+            <h3>What to Expect:</h3>
+            <ul>
+                <li>Expert mentorship from industry professionals</li>
+                <li>Workshop sessions on emerging technologies</li>
+                <li>Networking opportunities with tech leaders</li>
+                <li>Prizes worth ₹1,00,000</li>
+                <li>Free food and refreshments</li>
+            </ul>
+
+            <div class="registration-details">
+                <p><strong>Registration Fee:</strong> ₹500</p>
+                <p><strong>Team Size:</strong> 2-4 members</p>
+                <p><strong>Available Slots:</strong> Only 10 left</p>
+                <button>Register Now</button>
+            </div>
+
+            <p><strong>Event Organizer:</strong> Ananya Gupta</p>
+        </div>
+    </section>
 </body>
 </html>

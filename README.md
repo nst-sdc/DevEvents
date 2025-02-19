@@ -12,7 +12,7 @@ DevEvents is your one-stop solution to discover, manage, and stay updated with t
 
 ## Tech Stack
 
-DevEvents is built using modern web development technologies:
+ DevEvents is built using modern web development technologies:
 
 - **Frontend**: React.js for a dynamic and responsive user interface.
 - **Backend**: Node.js with Express for a scalable and robust API.

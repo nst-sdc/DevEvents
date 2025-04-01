@@ -1,9 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #f0f0f0;
+    color: #b89999;
 }
 
 header {
@@ -18,14 +18,15 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #1e1e1e;
+    background-color: #333;
     border-bottom: 2px solid #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #ffcc00;
 }
 
 .navbar .nav-links {
@@ -41,48 +42,55 @@ header {
 }
 
 .navbar .nav-links a {
-    color: #cccccc;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s;
 }
 
 .navbar .nav-links a:hover {
-    color: #ffffff;
+    color: #ffcc00;
+    text-decoration: underline;
 }
 
 .navbar .register-btn {
     padding: 10px 20px;
-    background-color: #4444ff;
-    color: #ffffff;
+    background-color: #ffcc00;
+    color: #333;
     border: none;
     border-radius: 5px;
     font-size: 0.9rem;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .navbar .register-btn:hover {
-    background-color: #6666ff;
+    background-color: #4444ff;
+    color: #fff;
+    transform: scale(1.1);
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .hero {
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
     background-color: #2e2e2e;
     border-bottom: 2px solid #444;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
+    background-image: linear-gradient(to right, #4444ff, #ffcc00);
     color: #ffffff;
 }
 
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
 .hero p {
-    font-size: 1.2rem;
-    color: #cccccc;
+    font-size: 1.5rem;
+    color: #dddddd;
     margin-bottom: 30px;
 }
 
@@ -101,6 +109,8 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     transition: background-color 0.3s;
+    background-color: #ffcc00;
+    color: #333;
 }
 
 .hero .btn.primary {
@@ -109,7 +119,10 @@ header {
 }
 
 .hero .btn.primary:hover {
-    background-color: #6666ff;
+    background-color: #ffcc00;
+    color: #333;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .hero .btn.secondary {
@@ -118,7 +131,10 @@ header {
 }
 
 .hero .btn.secondary:hover {
-    background-color: #666;
+    background-color: #ffcc00;
+    color: #333;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 section {
@@ -154,12 +170,19 @@ section {
 }
 
 #upcoming-events .event-card {
-    background-color: #2e2e2e;
-    border: 1px solid #444;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
     text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #333;
+}
+
+#upcoming-events .event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 #upcoming-events .event-card .event-date {
@@ -183,8 +206,8 @@ section {
 #upcoming-events .event-card .register-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4444ff;
-    color: #fff;
+    background-color: #ffcc00;
+    color: #333;
     border: none;
     border-radius: 5px;
     font-size: 0.9rem;
@@ -192,10 +215,14 @@ section {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 #upcoming-events .event-card .register-button:hover {
-    background-color: #6666ff;
+    background-color: #4444ff;
+    color: #fff;
+    transform: scale(1.1);
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 #past-events {
@@ -205,14 +232,20 @@ section {
 }
 
 #past-events .event-card {
-    background-color: #1e1e1e;
-    border: 1px solid #444;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
     width: 100%;
     max-width: 900px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin: 10px auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#past-events .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 #past-events .event-card h3 {
@@ -242,6 +275,12 @@ section {
     margin: 0 auto;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#event-details .event-details-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 #event-details .event-details-card h3 {
@@ -268,12 +307,13 @@ section {
 }
 
 .registration-details {
-    background-color: #444;
+    background-color: #333;
     padding: 15px;
     border-radius: 8px;
     margin-top: 20px;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
 }
 
 .registration-details p {
@@ -291,5 +331,8 @@ section {
 }
 
 .registration-details button:hover {
-    background-color: #6666ff;
+    background-color: #ffcc00;
+    color: #333;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.3s;
 }

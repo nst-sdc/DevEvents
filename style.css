@@ -2,15 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #0a1f44; /* Dark navy blue */
+    color: #f0f4f8; /* Light text */
 }
 
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #1e1e1e;
-    border-bottom: 2px solid #333;
+header, .navbar, #upcoming-events, #past-events, #event-details {
+    background-color: #112a52; /* Medium navy blue */
+    border-bottom: 2px solid #003366; /* Darker navy blue */
 }
 
 .navbar {
@@ -18,14 +16,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #1e1e1e;
-    border-bottom: 2px solid #333;
 }
 
 .navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #aad6f7; /* Light blue */
 }
 
 .navbar .nav-links {
@@ -36,54 +32,50 @@ header {
     padding: 0;
 }
 
-.navbar .nav-links li {
-    display: inline;
-}
-
 .navbar .nav-links a {
-    color: #cccccc;
-    text-decoration: none;
     font-size: 1rem;
-    transition: color 0.3s;
+    color: #aad6f7;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease, padding 0.3s ease;
 }
 
 .navbar .nav-links a:hover {
-    color: #ffffff;
+    color: #f0f4f8;
+    background-color: #003366;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .navbar .register-btn {
     padding: 10px 20px;
-    background-color: #4444ff;
+    background-color: #00509e;
     color: #ffffff;
     border: none;
     border-radius: 5px;
-    font-size: 0.9rem;
     cursor: pointer;
-    text-transform: uppercase;
     font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .navbar .register-btn:hover {
-    background-color: #6666ff;
+    background-color: #003366;
+    transform: scale(1.05);
 }
 
-.hero {
+header {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #2e2e2e;
-    border-bottom: 2px solid #444;
+    padding: 40px 20px;
 }
 
-.hero h1 {
+header h1 {
     font-size: 2.5rem;
     margin-bottom: 15px;
     color: #ffffff;
 }
 
-.hero p {
+header p {
     font-size: 1.2rem;
     color: #cccccc;
-    margin-bottom: 30px;
 }
 
 .hero .buttons {
@@ -98,18 +90,18 @@ header {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    text-transform: uppercase;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .hero .btn.primary {
-    background-color: #4444ff;
+    background-color: #00509e;
     color: #ffffff;
 }
 
 .hero .btn.primary:hover {
-    background-color: #6666ff;
+    background-color: #003366;
+    transform: scale(1.05);
 }
 
 .hero .btn.secondary {
@@ -121,175 +113,89 @@ header {
     background-color: #666;
 }
 
-section {
-    padding: 20px;
-}
-
-#upcoming-events {
-    padding: 40px 20px;
-    background-color: #1e1e1e;
-    text-align: center;
-    border-bottom: 2px solid #333;
-}
-
-#upcoming-events .section-header {
-    margin-bottom: 30px;
-}
-
-#upcoming-events .section-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #ffffff;
-}
-
-#upcoming-events .section-header p {
-    font-size: 1rem;
-    color: #cccccc;
-}
-
-#upcoming-events .events-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-#upcoming-events .event-card {
+.event-card {
     background-color: #2e2e2e;
     border: 1px solid #444;
     border-radius: 8px;
     padding: 20px;
     text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#upcoming-events .event-card .event-date {
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.event-card .event-date {
     font-size: 1.2rem;
-    color: #8888ff;
+    color: #aad6f7;
     margin-bottom: 10px;
 }
 
-#upcoming-events .event-card .event-title {
+.event-card .event-title {
     font-size: 1.5rem;
-    color: #ffffff;
     margin-bottom: 15px;
+    color: #ffffff;
 }
 
-#upcoming-events .event-card p {
+.event-card p {
     font-size: 0.9rem;
     color: #cccccc;
-    margin-bottom: 10px;
 }
 
-#upcoming-events .event-card .register-button {
-    display: inline-block;
+.event-card .register-button {
     padding: 10px 20px;
-    background-color: #4444ff;
-    color: #fff;
+    background-color: #00509e;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     font-size: 0.9rem;
-    cursor: pointer;
-    text-transform: uppercase;
     font-weight: bold;
-    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-#upcoming-events .event-card .register-button:hover {
-    background-color: #6666ff;
-}
-
-#past-events {
-    padding: 30px;
-    background-color: #121212;
-    border-bottom: 2px solid #333;
-}
-
-#past-events .event-card {
-    background-color: #1e1e1e;
-    border: 1px solid #444;
-    border-radius: 8px;
-    padding: 20px;
-    width: 100%;
-    max-width: 900px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px auto;
-}
-
-#past-events .event-card h3 {
-    margin: 0;
-    font-size: 20px;
-    color: #ff88ff;
-}
-
-#past-events .event-card p {
-    font-size: 16px;
-    margin-top: 10px;
-    line-height: 1.5;
-}
-
-#event-details {
-    padding: 30px;
-    background-color: #1e1e1e;
-    color: #ffffff;
-}
-
-#event-details .event-details-card {
-    background-color: #2e2e2e;
-    border: 1px solid #444;
-    border-radius: 8px;
-    padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-#event-details .event-details-card h3 {
-    font-size: 24px;
-    color: #88c0ff;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #444;
-    padding-bottom: 10px;
-}
-
-#event-details .event-details-card p {
-    font-size: 16px;
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
-#event-details .event-details-card ul {
-    list-style: circle;
-    padding-left: 20px;
-}
-
-#event-details .event-details-card ul li {
-    margin-bottom: 8px;
+.event-card .register-button:hover {
+    background-color: #003366;
+    transform: scale(1.05);
 }
 
 .registration-details {
     background-color: #444;
     padding: 15px;
     border-radius: 8px;
-    margin-top: 20px;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.registration-details p {
-    margin: 5px 0;
-    font-size: 14px;
-}
-
 .registration-details button {
-    background-color: #4444ff;
-    color: #fff;
-    border: none;
     padding: 10px 15px;
+    background-color: #00509e;
+    color: #ffffff;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .registration-details button:hover {
-    background-color: #6666ff;
+    background-color: #003366;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 30px;
+    border-bottom: 2px solid #333;
+}
+
+#past-events .event-card ul {
+    padding-left: 20px;
+    list-style: circle;
+}
+
+#past-events .event-card ul li {
+    margin-bottom: 8px;
 }

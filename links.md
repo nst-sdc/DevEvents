@@ -5,9 +5,9 @@
 - [Local Development Server](http://localhost:8000)
 
 ## Event Registration
-- [Upcoming Events Registration](http://localhost:8000#upcoming-events)
-- [Past Events Gallery](http://localhost:8000#past-events)
-- [Event Details](http://localhost:8000#event-details)
+- [Upcoming Events Registration](To Be Declared)
+- [Past Events Gallery](To Be Declared)
+- [Event Details](To Be Declared)
 
 ## Contact
 - [SDC Club](mailto:sdc@newtonschool.edu)

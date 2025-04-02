@@ -91,14 +91,6 @@ We welcome contributions! Please follow these steps:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 🗺️ Future Roadmap
-
-### Planned Features
-- [ ] User authentication system
-- [ ] Event registration backend
-- [ ] Email notifications
-- [ ] Event calendar integration
-- [ ] Mobile application
 
 ## 🔗 Links
 

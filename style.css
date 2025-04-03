@@ -357,3 +357,36 @@ section {
     transform: scale(1.05);
     transition: background-color 0.3s, transform 0.3s;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  #scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #0078d7; /* Blue color */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#scroll-to-top:hover {
+    background-color: #005fa3; /* Darker shade on hover */
+}
+
+.show-scroll {
+    opacity: 1;
+    visibility: visible;
+}

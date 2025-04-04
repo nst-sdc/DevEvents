@@ -10,8 +10,8 @@
     <nav class="navbar">
         <div class="logo">Newton School of Technology</div>
         <ul class="nav-links">
-            <li><a href="#">Upcoming Events</a></li>
-            <li><a href="#">Past Events</a></li>
+            <li><a href="#upcoming-events">Upcoming Events</a></li>
+            <li><a href="#past-events">Past Events</a></li>
             <li><a href="#">Gallery</a></li>
             <li><button class="register-btn">Register</button></li>
         </ul>
@@ -84,6 +84,19 @@
             <h2>Robotics Workshop</h2>
             <p><strong>Highlights:</strong> Robotics 1st Workshop, Competition</p>
         </div>
+
+                <div class="event-card">
+            <span class="tag">Workshop</span>
+            <h3>November 27, 2024</h3>
+            <h2>Robotics Workshop</h2>
+            <p><strong>Highlights:</strong> Robotics 1st Workshop, Competition</p>
+        </div>
+
+        <div class="event-card">
+            <span class="tag">Hackron</span>
+            <h3>5-6th March 2025</h3>
+            <h2>A 24-Hour Hackathon where participants compete with each other, work on innovative solutions for real-world problems</h2>
+            <p><strong>Highlights:</strong>Prize Pool: Rs.1,00,000</p>
     </section>
 
     <section id="event-details">
@@ -92,8 +105,8 @@
 
         <div class="event-details-card">
             <span class="tag">Featured Event</span>
-            <h2>Code Sprint 2024</h2>
-            <p><strong>Date:</strong> March 15-16, 2024 (9:00 AM - 9:00 PM)</p>
+            <h2>Code Sprint 2025</h2>
+            <p><strong>Date:</strong> March 15-16, 2025 (9:00 AM - 9:00 PM)</p>
             <p><strong>Location:</strong> Newton School Campus, Tech Hub</p>
             <p>Join us for an exciting 48-hour coding challenge where participants will work on innovative solutions for real-world problems. Showcase your skills, learn from peers, and win exciting prizes.</p>
 
@@ -116,5 +129,32 @@
             <p><strong>Event Organizer:</strong> Ananya Gupta</p>
         </div>
     </section>
+
+    <div id="scroll-to-top">
+        <span>&#8593;</span>
+    </div>
+    
+    <script>
+
+const scrollToTopBtn = document.getElementById('scroll-to-top');
+
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+        scrollToTopBtn.classList.add('show-scroll');
+    } else {
+        scrollToTopBtn.classList.remove('show-scroll');
+    }
+});
+
+
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+    </script>
 </body>
 </html>

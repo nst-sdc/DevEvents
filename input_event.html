@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register An Event - NST Events</title>
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <nav class="floating-nav">
+        <ul class="nav-items">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      
+
+    <section id="add-event-form" style="padding: 4rem 2rem">
+      <h1>Register a New Event</h1>
+      <form id="eventForm" style="max-width: 600px; margin: auto">
+        <div>
+          <label for="event-date">Date:</label><br />
+          <input type="date" id="eventDate" required /><br /><br />
+        </div>
+        <div>
+          <label>Title:</label><br />
+          <input type="text" id="eventTitle" required /><br /><br />
+        </div>
+        <div>
+          <label>Description:</label><br />
+          <textarea id="eventDesc" required></textarea><br /><br />
+        </div>
+        <div>
+          <label>Location:</label><br />
+          <input type="text" id="eventLocation" required /><br /><br />
+        </div>
+        <button type="submit" class="register-btn">Add Event</button>
+      </form>
+    </section>
+
+    <p
+      id="success-message"
+      style="display: none; color: green; text-align: center; margin-top: 1rem"
+    >
+      ✅ Event added successfully!
+    </p>
+    <p
+      id="error-message"
+      style="display: none; color: red; text-align: center; margin-top: 1rem"
+    >
+      ❌ Failed to add event. Please try again.
+    </p>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 80,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#ffffff", // White color for particles
+          },
+          shape: {
+            type: "circle",
+          },
+          opacity: {
+            value: 0.5,
+            random: true,
+          },
+          size: {
+            value: 3,
+            random: true,
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff", // White color for connecting lines
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 4,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "grab",
+            },
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+          },
+          modes: {
+            grab: {
+              distance: 140,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            push: {
+              particles_nb: 4,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+
+    <script src="form.js"></script>
+  </body>
+</html>

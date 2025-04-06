@@ -62,7 +62,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('https://images.unsplash.com/photo-1553877522-43269d4ea984') center/cover no-repeat;
     color: #fff;
     padding: 6rem 2rem;
@@ -137,7 +137,7 @@ body {
     border-radius: 16px;
     padding: 1.5rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
 }
 
 .event-card:hover {
@@ -168,11 +168,12 @@ body {
 
 .register-button:hover {
     background-color: #009e8b;
-}
+} 
 
 /* Past Events */
 #past-events {
     padding: 4rem 2rem;
+    background-color: #bfb2b2;
 }
 
 #past-events h1 {
@@ -185,6 +186,11 @@ body {
     text-align: center;
     margin-bottom: 2rem;
 }
+
+#past-events .event-card {
+    margin: 1rem auto;
+    max-width: 800px;
+} 
 
 .tag {
     display: inline-block;
@@ -263,12 +269,15 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
     display: none;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s ease;
 }
 
 #scroll-to-top.show-scroll {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
 }
 
 html {

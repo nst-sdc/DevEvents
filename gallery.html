@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Gallery - DevEvents</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">DevEvents</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="./input_event.html"><i class="fas fa-calendar-plus"></i> Add Event</a></li>
+            <li><a href="./index.html#upcoming-events"><i class="fas fa-calendar"></i> Upcoming</a></li>
+            <li><a href="./index.html#past-events"><i class="fas fa-history"></i> Past Events</a></li>
+            <li><a href="./gallery.html" class="active"><i class="fas fa-images"></i> Gallery</a></li>
+            <li><button class="register-btn" id="loginBtn"><i class="fas fa-sign-in-alt"></i> Login</button></li>
+        </ul>
+    </nav>
+
+    <header class="gallery-header">
+        <div class="gallery-header-content">
+            <h1>Event Gallery</h1>
+            <p>Explore moments from our past events</p>
+        </div>
+    </header>
+
+    <section id="gallery-filter">
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All Events</button>
+            <button class="filter-btn" data-filter="hackathon">Hackathons</button>
+            <button class="filter-btn" data-filter="workshop">Workshops</button>
+            <button class="filter-btn" data-filter="conference">Conferences</button>
+            <button class="filter-btn" data-filter="meetup">Meetups</button>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="gallery-grid">
+            <div class="gallery-item hackathon">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Hackathon participants">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Nirmaan Hackathon</h3>
+                        <p>November 2024</p>
+                    </div>
+                    <button class="gallery-btn"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item workshop">
+                <img src="https://images.unsplash.com/photo-1581092921461-7d65ca45393a?auto=format&fit=crop&w=800&q=80" alt="Robotics Workshop">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Robotics Workshop</h3>
+                        <p>November 2024</p>
+                    </div>
+                    <button class="gallery-btn"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item hackathon">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80" alt="Hackron">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Hackron</h3>
+                        <p>March 2025</p>
+                    </div>
+                    <button class="gallery-btn"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item conference">
+                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80" alt="Tech Conference">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Developer Summit</h3>
+                        <p>January 2025</p>
+                    </div>
+                    <button class="gallery-btn"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item meetup">
+                <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&q=80" alt="Developer Meetup">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>JavaScript Meetup</h3>
+                        <p>February 2025</p>
+                    </div>
+                    <button class="gallery-btn"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item workshop">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Data Science Workshop">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Data Science Workshop</h3>
+                        <p>December 2024</p>
+                    </div>
+                    <button class="gallery-btn"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item conference">
+                <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80" alt="Women in Tech">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Women in Tech Conference</h3>
+                        <p>March 2025</p>
+                    </div>
+                    <button class="gallery-btn"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item meetup">
+                <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&q=80" alt="Python Meetup">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Python Developers Meetup</h3>
+                        <p>April 2025</p>
+                    </div>
+                    <button class="gallery-btn"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption"></div>
+        <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <section id="gallery-cta">
+        <div class="cta-container">
+            <h2>Have photos from our events?</h2>
+            <p>Share your memories with our community</p>
+            <button class="btn primary"><i class="fas fa-upload"></i> Submit Photos</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>DevEvents</h3>
+                <p>Your one-stop solution to discover, manage, and stay updated with the latest developer-centric events worldwide!</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#upcoming-events">Upcoming Events</a></li>
+                    <li><a href="./index.html#past-events">Past Events</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./input_event.html">Add Event</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> Newton School of Technology, Pune</li>
+                    <li><i class="fas fa-phone"></i> +91 XXXXX XXXXX</li>
+                    <li><i class="fas fa-envelope"></i> info@devevents.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DevEvents. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <script src="gallery.js"></script>
+</body>
+</html>
